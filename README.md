@@ -10,7 +10,7 @@ In order to run the web application, we will need several dependencies installed
 
 
 
-There are several ways to install the dependencies. Using a package manager like [pip] would be reccommended. If you have [pip] you can run the following command to install FLask.
+There are several ways to install the dependencies. Using a package manager like pip would be reccommended. If you have pip you can run the following command to install Django.
 ```sh
 pip install Django
 ```
