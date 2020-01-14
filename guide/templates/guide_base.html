@@ -1,0 +1,33 @@
+{% load static %}
+<style>
+    .masthead {
+        height: 100vh;
+        min-height: 500px;
+        background-color: #E5E5E5;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    * {
+        font-family: 'Poppins', sans-serif;
+        color: #3D3842;
+    }
+</style>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<header class="masthead">
+    <!-- Navigation -->
+    {% include "nav_dark.html" %}
+
+    <div class="container h-100">
+        <div class="row" style="padding-top: 5%;">
+            <h2>Title</h2>
+        </div>
+        <p>content content content contentcontent content content content content content content content content content</p>
+    </div>
+</header>
