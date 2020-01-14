@@ -18,32 +18,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  </head>
 <!-- Full Page Image Header with Vertically Centered Content Photo by Christian Lue on Unsplash -->
 <header class="masthead">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-top: 5%;">
-    <!-- 'fixed-top' option keeps it in place-->
-    <div class="container navbar-inner">
-      <a class="navbar-brand" href="#"><p style="font-weight: 900; color: white; font-size: larger;">Impactful</p></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><p style="font-weight: 900; color: white;">About<p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><p style="font-weight: 900; color: white;">Contact<p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><p style="font-weight: 900; color: white;">Guide<p></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  {% include "nav.html" %}
+  
   <div class="container h-100">
     <div class="row align-items-center" style="padding-top: 5%;">
       <div class="col-4 text-center">
@@ -116,3 +96,6 @@
       expedita.</p>
   </div>
 </section>
+
+{% block new_content %}
+{% endblock %}
