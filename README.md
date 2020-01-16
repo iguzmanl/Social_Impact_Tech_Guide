@@ -20,3 +20,10 @@ pip install Django
 ```sh
 python manage.py runserver
 ```
+
+
+# To add airtable functionality
+
+```sh
+pip install airtable
+```
