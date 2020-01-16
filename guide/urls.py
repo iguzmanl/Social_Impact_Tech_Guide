@@ -1,6 +1,8 @@
 from django.urls import path
 
-from .views import homePageView,aboutPageView,guideView,guideOverviewView,guideEventView
+from .views import homePageView,aboutPageView,guideView,guideOverviewView,guideEventView, jobAppView
+
+from . import views
 
 urlpatterns = [
     path('', homePageView, name='home'),
@@ -8,5 +10,6 @@ urlpatterns = [
     path('/guide', guideView, name='guide'),
     path('/guide/overview', guideOverviewView, name='guideoverview'),
     path('/guide/guideevents', guideEventView, name='guideEvents'),
-    
+    path('/job_app', views.jobAppView, name = 'job_app')
+    # path('', views.home, name='home'),
 ]

@@ -23,7 +23,7 @@
 <body>
     <div class="wrapper">
         <!-- Sidebar  -->
-        
+
         <nav id="sidebar">
             <div class="sidebar-header">
                 <h3 style="font-weight: 900; ">Contents</h3>
@@ -45,7 +45,7 @@
                 <li>
                     <a href="{% url 'guideEvents' %}"style="font-weight: 400; ">Events and Conferences</a>
                 </li>
-            </ul>   
+            </ul>
         </nav>
 
         <!-- Page Content  -->
@@ -84,6 +84,11 @@
                                     <p style="font-weight: 900;">Guide<p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'job_app' %}">
+                                    <p style="font-weight: 900;">Opportunities WOO<p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +98,7 @@
             {% endblock %}
 
 
-            
+
         </div>
     </div>
 
