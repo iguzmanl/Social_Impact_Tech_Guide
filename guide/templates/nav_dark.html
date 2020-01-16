@@ -11,7 +11,7 @@
     <!-- 'fixed-top' option keeps it in place-->
     <div class="container navbar-inner">
 
-      <a class="navbar-brand" href="{% url 'home' %}"><p style="font-weight: 900; font-size: larger;">Impactful</p></a>
+      <a class="navbar-brand" href="{% url 'home' %}"><p style="font-weight: 900;color: grey; font-size: larger;">Impactful</p></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #3D3842;">
         <span class="navbar-toggler-icon" ></span>
@@ -19,13 +19,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}"><p style="font-weight: 900;">About<p></a>
+            <a class="nav-link" href="{% url 'about' %}"><p style="font-weight: 900;color: grey;">About<p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><p style="font-weight: 900; ">Contact<p></a>
+            <a class="nav-link" href="{% url 'contact' %}"><p style="font-weight: 900;color: grey; ">Contact<p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'guide' %}"><p style="font-weight: 900;">Guide<p></a>
+            <a class="nav-link" href="{% url 'guide' %}"><p style="font-weight: 900;color: grey;">Guide<p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'job_app' %}"><p style="font-weight: 900; color: grey; padding-right: 5px;">Opportunities<p></a>
           </li>
         </ul>
       </div>

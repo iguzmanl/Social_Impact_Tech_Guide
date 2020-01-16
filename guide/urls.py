@@ -1,12 +1,13 @@
 from django.urls import path
 
-from .views import homePageView,aboutPageView,guideView,guideOverviewView,guideEventView, jobAppView, guideReccomendationsView
+from .views import homePageView,aboutPageView,guideView,guideOverviewView,guideEventView, jobAppView, guideReccomendationsView, contactPageView
 
 from . import views
 
 urlpatterns = [
     path('', homePageView, name='home'),
     path('/about', aboutPageView, name='about'),
+    path('/contact', contactPageView, name='contact'),
     path('/guide', guideView, name='guide'),
     path('/guide/overview', guideOverviewView, name='guideoverview'),
     path('/guide/reccomendations', guideReccomendationsView, name='reccomendations'),
