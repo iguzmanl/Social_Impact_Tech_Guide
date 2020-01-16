@@ -1,0 +1,35 @@
+{% extends 'guide_base.html' %}
+
+{% block content %}
+
+<style>
+.center {
+  display: block;
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+</style>
+<h2 style="text-align: center;">Our Reccomendations <3</h2>
+<div class="line"></div>
+
+
+{% for rec in reccomendations %}
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <div class="card-body">
+                <h5 class="card-title">{{ rec.Name }}</h5>
+                <p class="card-text"> {{ rec.Description }}</p>
+
+                <a class="card-title" href="{{ rec.Link }}">
+                    <h5 class="card-text" style="color: #944654;">Link to Website!<h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+{% endfor %}
+{% endblock %}
