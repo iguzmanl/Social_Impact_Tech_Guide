@@ -28,7 +28,7 @@ Futher information is in requirements.txt
 python manage.py runserver
 ```
 
-## If changes are made to the models, these commands need to be run to affect these changes in the database:
+## If changes are made to the models, run these commands to propagate changes the database before starting web app:
 ```sh
 python3 manage.py makemigrations
 python3 manage.py migrate
