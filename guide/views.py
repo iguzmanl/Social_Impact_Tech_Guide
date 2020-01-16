@@ -25,8 +25,22 @@ def guideEventView(request):
     eventList = []
     for r in records:
         eventList.append(r['fields'])
+        print(r)
     print("used config!")
     return render(request,'guide_events.html',{'events': eventList})
+
+def guideReccomendationsView(request):
+    import config
+    from airtable import airtable
+    at = airtable.Airtable(config.at['base_id'], config.at['api_key'])
+    table = at.get('Our Reccomendations')
+    records = table['records']
+    eventList = []
+    for r in records:
+        eventList.append(r['fields'])
+        print(r)
+    print("used config!")
+    return render(request,'guide_reccomendations.html',{'reccomendations': eventList})
 
 def jobAppView(request):
     job_listings = JobListing.objects.all()
