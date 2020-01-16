@@ -61,8 +61,8 @@ a:focus {
     top: 0;
     height: 100vh;
     z-index: 999;
-    background: #C4C4C4;
-    color: #3D3842;
+    background: #969696;
+    color: rgb(255, 255, 255);
     transition: all 0.3s;
 }
 
@@ -72,7 +72,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #C4C4C4;
+    background: #969696;
 }
 
 #sidebar ul.components {
@@ -98,8 +98,8 @@ a:focus {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #3D3842;
-    background: rgb(136, 136, 136);
+    color: rgb(255, 255, 255);
+    background: rgb(95, 95, 95);
 }
 
 a[data-toggle="collapse"] {

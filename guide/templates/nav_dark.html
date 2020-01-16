@@ -1,17 +1,12 @@
 
-<style>
-  .navbar-inverse ,.navbar-toggle, .icon-bar{
-  color: #3D3842;
-
-}
 </style>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-top: 5%;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-top: 5%; ">
     <!-- 'fixed-top' option keeps it in place-->
     <div class="container navbar-inner">
 
-      <a class="navbar-brand" href="{% url 'home' %}"><p style="font-weight: 900;color: grey; font-size: larger;">Impactful</p></a>
+      <a class="navbar-brand" href="{% url 'home' %}"><p class="nav_text" style="font-weight: 900;color: grey; font-size: 70px;">Impactful</p></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #3D3842;">
         <span class="navbar-toggler-icon" ></span>
@@ -19,16 +14,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}"><p style="font-weight: 900;color: grey;">About<p></a>
+            <a class="nav-link nav_text" href="{% url 'about' %}"><p  class="nav_text" style="font-weight: 900;color: grey;">About<p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}"><p style="font-weight: 900;color: grey; ">Contact<p></a>
+            <a class="nav-link" href="{% url 'contact' %}"><p class="nav_text" style="font-weight: 900;color: grey; ">Contact<p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'guide' %}"><p style="font-weight: 900;color: grey;">Guide<p></a>
+            <a class="nav-link" href="{% url 'guideoverview' %}"><p class="nav_text" style="font-weight: 900;color: grey;">Guide<p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'job_app' %}"><p style="font-weight: 900; color: grey; padding-right: 5px;">Opportunities<p></a>
+            <a class="nav-link" href="{% url 'job_app' %}"><p class="nav_text" style="font-weight: 900; color: grey; padding-right: 5px;">Opportunities<p></a>
           </li>
         </ul>
       </div>

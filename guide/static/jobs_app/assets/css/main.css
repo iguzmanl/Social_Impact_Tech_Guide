@@ -122,6 +122,10 @@ input, select, textarea {
 		font-weight: 400;
 		line-height: 1.75em;
 	}
+	.nav_text{
+				font-family: "Poppins", "Helvetica", sans-serif;
+				font-weight: 900;
+	}
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -155,7 +159,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #61686b;
 		font-weight: 800;
-		letter-spacing: 0.075em;
+		/* letter-spacing: 0.075em; */
 		line-height: 1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
@@ -1929,8 +1933,8 @@ input, select, textarea {
 
 	header p {
 		color: #a8b0b3;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
+		/* letter-spacing: 0.05em; */
+		/* text-transform: uppercase; */
 	}
 
 	header h1 + p {
