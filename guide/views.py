@@ -13,8 +13,7 @@ def contactPageView(request):
     return render(request,'contact.html')
 
 def guideView(request):
-    return render(request,'guide_base.html')
-
+    return render(request,'guide_overview.html')
 
 def guideOverviewView(request):
     return render(request,'guide_overview.html')
@@ -31,6 +30,9 @@ def guideEventView(request):
         print(r)
     print("used config!")
     return render(request,'guide_events.html',{'events': eventList})
+
+def guideTopics(request):
+    return render(request, 'guide_topics.html')
 
 def guideReccomendationsView(request):
     import config
