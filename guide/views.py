@@ -36,12 +36,13 @@ def jobAppView(request):
 
         posted_title = request.POST.get("title", "")
         posted_OppType = request.POST.get("OppType", "")
-        posted_eligibility = request.POST.get("title", "")
-        posted_appDueDate = request.POST.get("description", "")
-        posted_oppDates = request.POST.get("OppType", "")
+        posted_eligibility = request.POST.get("eligibility", "")
+        posted_appDueDate = request.POST.get("appDueDate", "")
+        posted_oppDates = request.POST.get("oppDates", "")
         posted_description = request.POST.get("description", "")
-        posted_location = request.POST.get("title", "")
-        posted_link_external = request.POST.get("OppType", "")
+        posted_location = request.POST.get("location", "")
+        posted_link_external = request.POST.get("link_external", "")
+
 
         # print(title *100)
         # print(description *100)
