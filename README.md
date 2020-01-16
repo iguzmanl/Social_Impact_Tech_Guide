@@ -15,15 +15,23 @@ There are several ways to install the dependencies. Using a package manager like
 ```sh
 pip install Django
 ```
+To install airtable:
+
+```sh
+pip install airtable
+```
+
+Futher information is in requirements.txt
   
 ## To start web app
 ```sh
 python manage.py runserver
 ```
 
-
-# To add airtable functionality
-
+## If changes are made to the models, run these commands to propagate changes the database before starting web app:
 ```sh
-pip install airtable
+python3 manage.py makemigrations
+python3 manage.py migrate
+
 ```
+
