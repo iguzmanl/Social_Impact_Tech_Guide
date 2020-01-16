@@ -1,0 +1,45 @@
+{% extends 'guide_base.html' %}
+
+{% block content %}
+
+<style>
+.center {
+  display: block;
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+</style>
+<h2 style="text-align: center;">Events, Conferences, and More!</h2>
+<div class="line"></div>
+
+
+{% for event in events %}
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+
+            <img src="{{ event.image_url }}" style="max-width:100%; max-height: fit-content;" class="center"  alt="Image of Organization Logo">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{ event.Name }}</h5>
+                <p class="card-text"> {{ event.Description }}</p>
+
+                <h5 class="card-title">Dates</h5>
+                <p class="card-text"> {{ event.Dates }}</p>
+                <h5 class="card-title">Location</h5>
+                <p class="card-text"> {{ event.Location }}</p>
+
+                <a class="card-title" href="{{ event.Link }}">
+                    <h5 class="card-text" style="color: #944654;">Link to Website!<h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+{% endfor %}
+{% endblock %}

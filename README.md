@@ -7,6 +7,7 @@ In order to run the web application, we will need several dependencies installed
 | ------------- | ------------- |
 | Python (version 3) | https://www.python.org/ |
 | Django  | https://www.djangoproject.com/ |
+| airtable.py  | https://github.com/josephbestjames/airtable.py |
 
 
 
