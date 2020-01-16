@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'guide.apps.GuideConfig',
     'jobs_app'
-
 ]
 
 MIDDLEWARE = [
