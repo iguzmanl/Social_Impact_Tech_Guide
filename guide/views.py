@@ -17,7 +17,7 @@ def guideView(request):
 
 
 def guideOverviewView(request):
-    return render(request,'guide_overview.html')
+    return render(request,'guide_overview.html', {'overview':'active', 'tech_fields': '', 'tech_projects':'', 'events':'', 'recs':''})
 
 def guideEventView(request):
     import config
@@ -30,7 +30,7 @@ def guideEventView(request):
         eventList.append(r['fields'])
         print(r)
     print("used config!")
-    return render(request,'guide_events.html',{'events': eventList})
+    return render(request,'guide_events.html',{'event_list': eventList, 'overview':'', 'tech_fields': '', 'tech_projects':'', 'events':'active', 'recs':''})
 
 def guideReccomendationsView(request):
     import config
@@ -43,7 +43,7 @@ def guideReccomendationsView(request):
         eventList.append(r['fields'])
         print(r)
     print("used config!")
-    return render(request,'guide_reccomendations.html',{'reccomendations': eventList})
+    return render(request,'guide_reccomendations.html',{'reccomendations': eventList, 'overview':'', 'tech_fields': '', 'tech_projects':'', 'events':'', 'recs':'active'})
 
 def jobAppView(request):
     job_listings = JobListing.objects.all()
