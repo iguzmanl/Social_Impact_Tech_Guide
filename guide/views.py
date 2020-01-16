@@ -19,6 +19,11 @@ def guideView(request):
 def guideOverviewView(request):
     return render(request,'guide_overview.html', {'overview':'active', 'tech_fields': '', 'tech_projects':'', 'events':'', 'recs':''})
 
+def guideFields(request):
+    return render(request,'guide_fields.html', {'overview':'', 'tech_fields': 'active', 'tech_projects':'', 'events':'', 'recs':''})
+def guideProjects(request):
+    return render(request,'guide_projects.html', {'overview':'', 'tech_fields': '', 'tech_projects':'active', 'events':'', 'recs':''})
+
 def guideEventView(request):
     import config
     from airtable import airtable
